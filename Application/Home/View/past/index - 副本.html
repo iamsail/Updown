@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传</title>
+</head>
+<body>
+    <h3>此处上传文件orz</h3>
+    <form action="/updown/Home/Index/upload" method="post" enctype="multipart/form-data">
+        <!--<input type="text" name="name" />-->
+        <input type="file" name="photo"  style="background-color: yellow;"/> <br>
+        <input type="submit" value="提交" >
+        <!--<br>-->
+        <!--<input type="file">-->
+    </form>
+    <br><br><br><br><br>
+    <hr>
+    <h5><a href="Home/Index/download" id="download">下载文件</a></h5>
+
+    <if condition="null != $_SESSION['name'] ">
+        <li><a href="#" ><i><php>echo $_SESSION['name']</php></i></a></li>
+        <li><a href="#" ><i><php>echo $_SESSION['usrid']</php></i></a></li>
+        <li><a href="Home/Index/logout" ><i>注销</i></a></li>
+        <else/>
+        <a href="http://f.yiban.cn/iapp94779" id="login">登录</a>
+        <!--<li><a href="Home/Index/register" ><i>注册</i></a></li>-->
+    </if>
+    <!--<h5><a href="http://f.yiban.cn/iapp94779">登录</a></h5>-->
+    <!--<h5><a href="Home/Index/login">登录</a></h5>-->
+    <hr>
+    <script>
+        var download = document.getElementById("download");
+        var login = document.getElementById("login");
+        var text = document.getElementById("login").innerHTML;
+        download.onclick = function (){
+
+            if(text ==="登录"){
+                alert('请先登录');
+                return false;
+            }
+        }
+//        alert(text); history.go(-1);
+    </script>
+</body>
+</html>

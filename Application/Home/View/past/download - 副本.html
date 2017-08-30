@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件下载</title>
+</head>
+<body>
+<!--考虑文件名和文件保存名-->
+    <h3>此处下载文件orz</h3>
+    <volist name="textinfo" id="water" offset="0" empty="1">
+            <a href="#">文件名:{$water.name}</a> <br>
+             <a href="/updown/Application/Common/Common/Uploads/{$water.path}{$water.savename}">嘿嘿</a><br><br>
+    </volist>
+
+</body>
+</html>

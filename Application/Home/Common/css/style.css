@@ -1,0 +1,245 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ width: 100%; height: 100%; background-color: #060606; }
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  z-index: -1000;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+  z-index: -1000;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+/*#particles-js{ width: 100%; height: 100%; background-color:#1B1F3A; background-image: url('/updown/Application/Home/Common/img/11.jpg'); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;z-index: -1000; }*/
+#particles-js{ width: 100%; height: 100%; background-color:#1B1F3A; background-image: url(''); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;z-index: -1000; }
+
+/* --------------- mine --------------- */
+.sail{
+  z-index: 10000;
+  width: 40%;
+  height: 30%;
+  position: absolute;
+  top:53%;
+  left:52%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width: 600px) {
+  .sail{
+    width: 50%;
+    height: 50%;
+    left:48%;
+    top:54%;
+  }
+}
+
+.common_button{
+  display: inline-block;
+  width: 120px;
+  height: 38px;
+  border: 1.7px solid white;
+  border-radius: 10px;
+  font-family: 微软雅黑;
+  font-size: 13px;
+  color:white;
+  overflow:hidden;
+  background-color:transparent;
+  /*background-color:black;*/
+  position: absolute;
+  text-align: center;
+  line-height: 40px;
+}
+
+input[type="file"]{
+  opacity:0;
+  position:absolute; right:0; top:0; font-size:100px;
+}
+
+/*a.choose{*/
+  /*left:520px;*/
+/*}*/
+
+/*.submit{*/
+  /*left:670px;*/
+  /*line-height: 30px;*/
+  /*height: 40px;*/
+/*}*/
+
+/*#download{*/
+  /*left:820px;*/
+  /*top:0px;*/
+/*}*/
+
+/*#login{*/
+  /*left:670px;*/
+  /*top:60px;*/
+/*}*/
+
+/*.info_name{*/
+  /*top:50px;*/
+  /*left:670px;*/
+/*}*/
+
+/*.info_id{*/
+  /*top:50px;*/
+  /*left:820px;*/
+/*}*/
+
+/*.logout{*/
+  /*top:100px;*/
+  /*left:820px;*/
+/*}*/
+
+
+/*=================================*/
+
+
+a.choose{
+left:30px;
+}
+
+.submit{
+left:180px;
+line-height: 30px;
+height: 40px;
+}
+
+#download{
+left:330px;
+top:0px;
+}
+
+#login{
+left:180px;
+top:60px;
+}
+
+.info_name{
+top:50px;
+left:180px;
+}
+
+.info_id{
+top:50px;
+left:330px;
+}
+
+.logout{
+top:100px;
+left:330px;
+}
+
+
+@media screen and (max-width: 600px) {
+  a.choose{
+    left:30px;
+  }
+
+  .submit{
+    left:30px;
+    top:50px;
+    line-height: 30px;
+    height: 40px;
+  }
+
+  #download{
+    left:30px;
+    top:100px;
+  }
+
+  #login{
+    left:30px;
+    top:150px;
+  }
+
+  .info_name{
+    left:30px;
+    top:200px;
+  }
+
+  .info_id{
+    left:30px;
+    top:250px;
+  }
+
+  .logout{
+    left:30px;
+    top:300px;
+  }
+
+}

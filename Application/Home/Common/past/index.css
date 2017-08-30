@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+
+    color:white;
+}
+
+body{
+    background: url(img/space.png) no-repeat ;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    /*width: 100vw;*/
+}

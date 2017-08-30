@@ -1,0 +1,27 @@
+/*<style type="text/css">*/
+	h3{
+		color: white;
+		background: #00bfff;
+		text-align: center;
+		border: 2px solid #1e90ff;
+		border-radius: 12px;
+		margin:50px;
+		font-family: '微软雅黑';
+	}
+	a{
+		text-decoration: none;
+    	color: black;
+    	background: #00ced1;
+    	line-height: 1.5;
+    	font-family: '微软雅黑';
+	}
+	#down{
+		text-indent: 2em;
+		position: relative;
+		left:  33px;
+	}
+	#water{
+		position: relative;
+		left:  60px;
+	}
+/*</style>*/
